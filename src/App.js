@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ButtonLoad from './components/button2';
+import ButtonLoadAnimation from './components/buttonloadani';
+import RadioButtons from './components/radio1';
+import Radioauto from './components/radioauto.tsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ButtonLoad/>
+      <ButtonLoadAnimation/>
+      <RadioButtons/>
+      <Radioauto></Radioauto>
     </div>
   );
 }
