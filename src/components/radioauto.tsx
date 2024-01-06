@@ -10,10 +10,11 @@ function Radioauto(){
     const [value,setValue]=useState<string|null> (null);
     function handleChange(e){
       setValue(e.target.value)
-      e.target.label=e.target.label + '✔️'
+        
     }
 
     return (
+      <div>
     <>{
         items.map(item=>(
             <div key={item.value} className="w-20 m-auto h-9">
@@ -29,11 +30,12 @@ function Radioauto(){
             <label htmlFor={item.value}
              className={`  ${value === item.value? "selected" :" "}`}>
               {item.label}{value === item.value && "✔️"}
-              </label>
+              </label> 
               </div>  
             </div>
         ))}
 
-    </>);
+    </>
+    </div>);
 }
 export default Radioauto

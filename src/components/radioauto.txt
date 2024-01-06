@@ -1,0 +1,27 @@
+This is a TypeScript based solution for radio button automation 
+from a list of fields and values. When the buttons are pressed, 
+it adds a "✔️" mark to show selected button.
+
+list of buttons:
+items- since in TS we need to keep in mind the types of each variable
+       items:{value:String,label:string}[] - this is how a list is declared
+       then values are input into the list
+        { value:'music',label:'Music'}
+
+We use useState hook to manage the label string value with variable value,setValue function
+and "useState<string|null> (null)" means either string or null but default is null
+
+function handleChange-
+    set value of variable value to "e -> target -> value" 
+    
+
+in return- 
+    we use map function on items list 
+    1. takes item and returns 
+    <div key={item.value}>  
+    amd a div to contain label and input
+    2. name and type is pre-set for all buttons but value, id is passed from item.value
+
+    3. label name is set to item.value by default
+    4. if value variable is equal to item.value, set the label name to 
+            item.value + "✔️"

@@ -12,6 +12,7 @@ function App() {
       <ButtonLoadAnimation/>
       <RadioButtons/>
       <Radioauto></Radioauto>
+      
     </div>
   );
 }

@@ -1,0 +1,32 @@
+This component is for Radio buttons where we use useState hook for 2 variables
+- variable selectedOption for storing value of pressed button
+- variable on for a flag on pressed button to color each button individually
+
+function handleRadioChange-
+1. takes input "event" 
+2. sets selectedOption to event-> target(button)-> value 
+3. turn on for button to true
+
+const function getRadioBg-
+    takes input radio option value
+ returns 
+ 1. if on state variable value && "and" selectedOption is equal to option
+    then -
+        { backgroundColor: 'black', color: 'white' }
+ 2. else {} empty list for styling so default is applied
+
+radio-button contains:
+-label
+-input 
+
+#label 
+1. has style function that passes "option-value" to getRadioBg function
+2. and some default styling
+
+#input
+1. takes attribute:
+    -type of input
+    -value of input
+    -checked :  sets selectedOption to "option1"
+    -onChange : function handleRadioChange
+

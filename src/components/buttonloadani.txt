@@ -1,0 +1,19 @@
+This button is for setting a animation of loading when pressed on it. 
+We use 'useState' hook for putting up isLoad variable and default value is false
+and handleClick for button click action. 
+
+handleClick()-
+1. set the isLoad to true by setIsLoad(true)
+2. put timeout for 2s
+
+for animation -
+we use a div and in tailwind className we have these two attributes:
+             "animate-spin" and  "rounded-full"
+
+to switch on - 
+1. if-  isLoad is true (after pressing the button from load function)
+2. we append a a div and put some tailwind css in it
+3. the bg is none but border is to "2 unit" 
+4. and for center we use m-auto so margin left-right is equal and div is in center
+5. set border-top color to border-top-red-600 
+6. else-  set text to "Button Load"

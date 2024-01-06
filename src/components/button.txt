@@ -1,0 +1,14 @@
+This button is for changing the text to "Loading..." for 2 seconds 
+after you press on it.
+
+We use 'useState' hook for putting up isLoading variable and default value is false
+and handleClick for button click action. 
+
+handleClick()-
+1. set the isLoading to true
+2. put timeout for 2s
+
+In button-
+1. onClick redirects to handleClick function
+2. disabled value is equal to isLoading value
+3. set the text to 'Loading...' or 'Click me' according to isLoading value
