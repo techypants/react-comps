@@ -14,7 +14,7 @@ function Radioauto(){
     }
 
     return (
-      <div>
+      <div className="mb-10">
     <>{
         items.map(item=>(
             <div key={item.value} className="w-20 m-auto h-9">
